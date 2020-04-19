@@ -1,6 +1,10 @@
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './style.scss';
-// const $ = require('jquery');
-let num = 0;
-// eslint-disable-next-line no-useless-escape
-setInterval(() => { $('#main').html(`You\'\ ve been on this page for ${num} seconds.`); num += 1; }, 1000);
+
+const App = () => <div className="test">All the REACT are belong to us!</div>;
+
+ReactDOM.render (
+    <App/>,
+    document.getElementById('main')
+);
